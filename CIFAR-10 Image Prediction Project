@@ -11,7 +11,7 @@ def preprocess_image(image_path):
     image=cv2.imread(image_path) #Reading as BGR format
     image=cv2.resize(image,(32,32))
     image=image.astype('float32')/255.0
-    image=np.reshape(image,(1,32,32,3))  #Changing the last dimension ans size to 3 and 32x32 
+    image=np.reshape(image,(1,32,32,3))  #Changing the last dimension and size to 3 and 32x32 
     return image
 
 def train_model():
